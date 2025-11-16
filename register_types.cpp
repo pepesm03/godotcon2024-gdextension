@@ -10,6 +10,9 @@
 #include "human.h"
 #include "days.h"
 #include "player.h"
+#include "game_manager.h"
+#include "quiz.h"
+
 
 
 
@@ -29,6 +32,9 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	GDREGISTER_CLASS(HumanCharacter);
 	GDREGISTER_CLASS(DayManager);
 	GDREGISTER_CLASS(Player);
+	GDREGISTER_CLASS(GameManager);
+    GDREGISTER_CLASS(QuizManager);
+
 
 
 

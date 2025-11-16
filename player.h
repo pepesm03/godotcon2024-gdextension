@@ -1,7 +1,9 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
 
 #include <godot_cpp/classes/node.hpp>
+#include <godot_cpp/core/class_db.hpp>
+
 using namespace godot;
 
 class Player : public Node {
@@ -11,11 +13,7 @@ protected:
     static void _bind_methods();
 
 public:
-    int tokens = 5;
-
     Player() {}
-    bool spend_tokens(int amount);
-    void earn_tokens(int amount);
 };
 
-#endif
+#endif // PLAYER_HPP
